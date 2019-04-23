@@ -1,0 +1,13 @@
+total 4
+-rwxrwxrwx 1 robq robq  86 Apr 23 20:57 HW
+-rwxrwxrwx 1 robq robq  61 Apr 23 20:57 HW2
+-rw-rw-rw- 1 robq robq  48 Apr 23 20:57 README.md
+-rwxrwxrwx 1 robq robq  64 Apr 23 20:57 Update
+-rwxrwxrwx 1 robq robq  30 Apr 23 20:57 WatchDisk
+-rw-rw-rw- 1 robq robq  53 Apr 23 21:37 errors.txt
+-rw-rw-rw- 1 robq robq   0 Apr 23 21:40 filelist.txt
+-rwxrwxrwx 1 robq robq 207 Apr 23 20:57 iffile
+-rwxrwxrwx 1 robq robq 121 Apr 23 20:57 iffolder
+-rwxrwxrwx 1 robq robq 127 Apr 23 20:57 ifstat
+-rwxrwxrwx 1 robq robq 383 Apr 23 21:40 standard-inputtest
+-rwxrwxrwx 1 robq robq 314 Apr 23 20:57 updates-script

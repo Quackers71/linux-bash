@@ -1,0 +1,19 @@
+
+#!/bin/bash
+
+# Standard Input 
+echo "Please enter your name : "
+read myname
+echo "You entered : $myname"
+
+# Standard Output
+ls -l > filelist.txt
+echo "Output \"ls -ls\" to filelist.txt - here is the filelist.txt"
+sleep 2
+cat filelist.txt
+
+# Standard Error
+ls /root 2> errors.txt
+echoe "Error Output of \"ls /root\ 2>\" to errors.txt - here is the errors.txt"
+sleep 2
+cat errors.txt
