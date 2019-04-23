@@ -1,0 +1,9 @@
+
+#!/bin/bash
+
+HW="Hello World!"
+
+echo $HW
+echo $HW
+echo $HW
+
