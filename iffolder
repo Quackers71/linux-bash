@@ -1,0 +1,9 @@
+
+#!/bin/bash
+
+if [ -d ~/linux-bash/myfolder ]
+then
+	echo "The folder exists."
+else
+	echo "The folder does not exist."
+fi

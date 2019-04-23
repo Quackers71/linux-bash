@@ -1,0 +1,14 @@
+
+#!/bin/bash
+
+F="myfile"
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+
+if [ -f ~/linux-bash/myfile ]
+then
+	echo -e "The file${RED}" $F "${NC}exists."
+else
+	echo -e "The file${RED}" $F "${NC}does not exist."
+fi
+
