@@ -1,0 +1,12 @@
+# Linux Commands & Resources
+
+## Bash Scripts always start with #!/bin/bash = HashBang
+
+# https://techincidents.com/important-penetration-testing-cheat-sheet/
+# http://cheat.sh/
+
+# To run your Scripts on a Linux Instance from anywhere -
+# you can place them within /usr/local/bin i.e.
+# sudo cp whiletest /usr/local/bin
+
+# more to follow......
