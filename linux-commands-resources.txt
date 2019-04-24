@@ -9,4 +9,11 @@
 # you can place them within /usr/local/bin i.e.
 # sudo cp whiletest /usr/local/bin
 
-# more to follow......
+# Using sendemail
+
+sudo apt-get update
+sudo apt-get install sendemail libio-socket-ssl-perl libnet-ssleay-perl
+
+sendemail -f quackers@gmail.com -t quackquack@gmail.com -u This is just a test. -m "Testin 1 2 3 ..." -s smtp.googlemail.com:587 -xu quackers@gmail.com -xp $PASSWORD -o tls=yes
+
+#
