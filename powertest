@@ -1,0 +1,17 @@
+##
+# Unfortunately this won't work as it is not a full Ubuntu Distro
+# It's just the base Windows 10 Developer Tool - Windows Subsystem for Linux
+# Also installed - sudo apt-get install powermanagement-interface
+##
+
+#!/bin/bash
+
+# Find out if the Laptop is plugged in.
+
+grep -q 0 /sys/class/power_supply/ac/online
+if [ $? = 0 ]
+then
+	# The laptop is not plugged in. Go into Hibernation
+	sudo pm-suspend
+fi
+
