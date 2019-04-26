@@ -1,13 +1,15 @@
 
 #!/bin/bash
 
-SMTPFROM=iburger71@gmail.com
+# PASSWORD=
+
+SMTPFROM=fcukq@hotmail.co.uk
 SMTPTO=robq71@gmail.com
-SMTPSERVER=smtp.googlemail.com:587
-SMTPUSER=iburger71@gmail.com
+SMTPSERVER=smtp-mail.outlook.com:587
+SMTPUSER=fcukq@hotmail.co.uk
 SMTPPASS=PASSWORD
+echo $SMTPPASS
 MESSAGEBODY="Testing 1 2 3"
 SUBJECT="This is a test."
 
 sendemail -f $SMTPFROM -t $SMTPTO -u $SUBJECT -m $MESSAGEBODY -s $SMTPSERVER -xu $SMTPUSER -xp $SMTPPASS
-
