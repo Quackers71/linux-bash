@@ -2,6 +2,21 @@
 
 # Simple note-taking script
 
-echo $(date): $* >> ~/linux-bash/notes.txt
-echo Note saved: $*
+# get the date
+date=$(date)
+
+# get the topic
+topic=$1
+
+# filename to write to
+filename="${HOME}/linux-bash/${topic}notes.txt"
+
+# Ask user for input
+read -p "Enter a note : " note
+
+echo "$(date): $note" >> "$filename"
+echo "Note '$note' saved to $filename"
+
+sleep 2
+cat "${HOME}/linux-bash/${topic}notes.txt"
 
