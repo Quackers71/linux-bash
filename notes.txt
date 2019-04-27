@@ -1,0 +1,9 @@
+Hello
+Goodbye
+Hello again on 27/04/2019
+Sat Apr 27 10:04:18 DST 2019: Help me now!
+Sat Apr 27 10:10:08 DST 2019: BINNED
+Sat Apr 27 10:11:25 DST 2019: cp'd to /usr/bin/
+Sat Apr 27 10:14:42 DST 2019: AWS AZURE GCP
+Sat Apr 27 10:14:55 DST 2019: AWS AZURE GCP 2
+Sat Apr 27 10:15:32 DST 2019: AWS 5
