@@ -14,8 +14,13 @@ filename="${HOME}/linux-bash/${topic}notes.txt"
 # Ask user for input
 read -p "Enter a note : " note
 
-echo "$(date): $note" >> "$filename"
-echo "Note '$note' saved to $filename"
+if [[ $note ]]; then
+	echo "$(date): $note" >> "$filename"
+	echo "Note '$note' saved to $filename"
+
+else
+	echo "No input; note wasn't saved."
+fi
 
 sleep 1
 cat "${HOME}/linux-bash/${topic}notes.txt"
