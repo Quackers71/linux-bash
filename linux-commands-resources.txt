@@ -4,6 +4,13 @@
 
 # https://techincidents.com/important-penetration-testing-cheat-sheet/
 # http://cheat.sh/
+# http://cheat.sh/bash/:learn ## Specifically for learning Bash Scripting
+
+# Courses
+# https://app.pluralsight.com/library/courses/bash-shell-scripting/table-of-contents
+
+# Enable Linux Bash Shell on Windows 10
+# https://www.laptopmag.com/articles/use-bash-shell-windows-10
 
 # To run your Scripts on a Linux Instance from anywhere -
 # you can place them within /usr/local/bin i.e.

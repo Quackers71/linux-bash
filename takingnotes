@@ -17,6 +17,6 @@ read -p "Enter a note : " note
 echo "$(date): $note" >> "$filename"
 echo "Note '$note' saved to $filename"
 
-sleep 2
+sleep 1
 cat "${HOME}/linux-bash/${topic}notes.txt"
 
