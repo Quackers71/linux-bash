@@ -1,0 +1,50 @@
+#!/bin/bash
+
+# create_script
+# This script creates a new bash script, sets permissions and more
+# Author : Q
+
+# Is there an argument?
+if [[ ! $1 ]]; then
+	echo "Missing Argument"
+	exit 1
+fi
+
+# Setting Variables and Filename for the New File
+scriptname="$1"
+bindir="${HOME}/linux-bash/bin"
+filename="${bindir}/${scriptname}"
+
+# Check whether the file already exists in the bin directory using "-e"
+if [[ -e $filename ]]; then
+	echo "File ${filename} already exists."
+	exit 1
+fi
+
+# Check whether the command name exists using "type"
+if type "$scriptname"; then
+	echo "There is already a command with name ${scriptname}"
+	exit 1
+fi
+
+# Check bin directory exists using "-d"
+if [[ ! -d $bindir ]]; then
+	if mkdir "$bindir"; then
+		echo "created ${bindir}"
+	else
+		echo "${bindir} already exists."
+		exit 1
+	fi
+fi
+
+# Create a script with a single line
+echo '#!/bin/bash' > "$filename"
+# Add executable permission
+chmod u+x "$filename"
+# Open with editor
+if [[ $EDITOR ]]; then
+	$EDITOR "$filename"
+else
+	echo "Script created; not starting editor because \$EDITOR is not set."
+fi
+
