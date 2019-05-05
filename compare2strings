@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# compare the length of two strings
+# Author: Q
+
+# Check number of arguments
+if [[ $# -ne 2 ]]; then
+	echo "Need exactly two arguments"
+	exit 1
+fi
+
+length1=${#1}
+length2=${#2}
+
+# Which one has the most strings?
+if [[ $length1 -gt $length2 ]]; then
+	echo "$1 is the longest"
+elif [[ $length1 -eq $length2 ]]; then
+	echo "length is equal"	
+else
+	echo "$2 is the longest"
+fi
+
+exit 0
+
