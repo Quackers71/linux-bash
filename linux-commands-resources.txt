@@ -37,4 +37,28 @@ set -x # start debug
 filename="${HOME}/${topic}notes.txt"
 set +x # end debug
 
+## If, Then, Elif, Else
+
+if [[ expression ]]; then
+	echo "bla bla"
+	exit 1
+fi
+if [[ exp ]]; then
+elif [[ exp ]]; then
+else
+fi
+exit 0
+
+# Return codes
+0 = success, everything else = failure 
+exit 0
+
+# Conditional expressions
+Use [[ .. ]]
+
+Dont' use [ .. ] or test
+"help test" and "help [["
+Testing strings, files, dirs and numbers
+!=not, &&=and, ||=or
+
 # 
