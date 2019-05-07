@@ -61,4 +61,28 @@ Dont' use [ .. ] or test
 Testing strings, files, dirs and numbers
 !=not, &&=and, ||=or
 
-# 
+## Input and Output
+# echo
+#  Prints its arguments to standard output, followed by a newline
+#  -n suppresses the newline
+#  -e allows use of escape sequences
+#      \t: tab
+#      \b  backspace
+
+# printf
+# Can do more sophisticated output than echo
+# Uses a format string for formatting
+# Will not append a newline by default
+#e.g.
+printf "hello"
+printf "hello\n"
+printf "hello %s, how are you?\n" $USER
+printf "p%st\n" a e i o u
+printf "%ss home is in %s\n" $USER $HOME
+printf "|%20s |%20s |%20s |\n" $(ls)
+printf -v greeting "hello %s, how are you?\n" $USER
+echo $greeting # -v will send the output to a variable
+
+# for more info goto : http://goo.gl/ZThKCj
+# or man printf
+
