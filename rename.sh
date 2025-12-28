@@ -1,6 +1,9 @@
 #!/bin/bash
-# Example template test 01 (2025-12-28) (Copy).txt
-# Example template test 02 (2025-11-02) (Copy).txt
+
+# remove specific stuff from multiple files i.e. everything within and including
+# the brackets () including any whitespace
+# "Example template test 01   (2025-12-28) (Copy).txt"
+# "Example template test 02   (2025-11-02) (Copy).txt"
 
 for file in *"("*").txt"; 
 do
@@ -10,4 +13,4 @@ do
 done
 
 # Result
-# Example template test 01.txt
+# "Example template test 01.txt"
