@@ -5,6 +5,8 @@
 # "Example template test 01   (2025-12-28) (Copy).txt"
 # "Example template test 02   (2025-11-02) (Copy).txt"
 
+# ./rename-dir.sh /{$TARGET_DIR}
+
 TARGET_DIR="${1:-.}"
 
 if [ ! -d "$TARGET_DIR" ]; then
